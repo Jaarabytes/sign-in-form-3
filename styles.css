@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,400&display=swap');
+*{
+    font-family: Poppins;
+}
+body{
+    background-color: rgb(61, 8, 104);
+}
+#main{
+    width: clamp(300px,20%,20%);
+    background-color:white;
+    padding:20px 20px 20px 40px;
+    border-radius: 8px;
+    margin: 0 auto;
+    opacity:0;
+}
+#submit{
+    background-color: rgb(245, 115, 137);
+    color:white;
+    border:0;
+    transition: background .5s, transform .5s;
+}
+#submit:hover{
+    background-color: rgb(245, 69, 98);
+    transform : translateY(-10px)
+
+}
+#google{
+    background-color: rgb(66, 127, 241);
+    color:white;
+    border:0;
+    margin: 20px 0;
+    width:85%;
+    height:clamp(30px,50px,56px);
+    transition: background .5s, transform .5s;
+}
+#google:hover{
+    background-color: rgb(9, 49, 230);
+    transform : translateY(-10px)
+}
+button,input{
+    border-radius:5px;
+}
+input{
+    border:1px solid gray;
+}
+#details input{
+    margin: 20px 0;
+    width:90%;
+    height:clamp(30px,50px,56px);
+}
+#header{
+    text-align:center;
+}
+#mute{
+    color:gray;
+}
+#details{
+    animation: bounce 1s 1 .5s;
+    opacity:0;
+}
+img{
+    border-radius:13px;
+    height:20px;
+    width:20px;
+    margin-right:10px;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0px);
+    }
+    
+    40% {
+      transform: translateY(-40px);
+    }
+    
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
